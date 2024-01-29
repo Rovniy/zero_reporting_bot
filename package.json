@@ -11,7 +11,7 @@
     "build": "tsc -p tsconfig.json",
     "build:watch": "tsc -w -p tsconfig.json",
     "build:release": "npm run clean && tsc -p tsconfig.release.json",
-    "lint": "eslint . --ext .ts --ext .mts --fix",
+    "lint": "eslint . --ext .ts --ext .mts",
     "test": "jest --coverage",
     "test:watch": "jest --watch"
   },

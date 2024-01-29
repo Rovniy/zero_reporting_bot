@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express'
-import { ApiFunction } from '../types/api';
+import { ApiFunction } from '../types/api'
 import cors from 'cors'
 import { Config } from '../utils/config.js'
 import { testHandler } from '../logic/api/test-handler.js'
@@ -44,10 +44,10 @@ const createRouter = (
 	secure: boolean = false
 ) : void => {
 
-  const args = [
+	const args = [
 		route,
 		...(secure ? [ authentication ] : []),
-    // @ts-ignore
+		// @ts-ignore
 		(req: Request, res: Response) : void => handler({ req, res })
 	]
 
